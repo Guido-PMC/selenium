@@ -28,12 +28,17 @@ from selenium import webdriver
 
 
 
-
+webdriver_path = os.environ['WEBDRIVER']
+argument_path = os.environ['ARGUMENT']
+argument2_path = os.environ['ARGUMENT2']
 options = webdriver.ChromeOptions()
-options.add_argument(r"--user-data-dir=/Users/guigonzalez/Library/Application Support/Google/Chrome/") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
-options.add_argument(r'--profile-directory=Profile 8') #e.g. Profile 3
+#options.add_argument("--user-data-dir=/Users/guigonzalez/Library/Application Support/Google/Chrome/") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
+#options.add_argument(r'--profile-directory=Profile 8') #e.g. Profile 3
+options.add_argument(argument_path)
+options.add_argument(argument2_path)
 
-driver = webdriver.Chrome("/Users/guigonzalez/Downloads/chromedriver", chrome_options=options)
+
+driver = webdriver.Chrome(webdriver_path, chrome_options=options)
 
 driver.get("https://web.whatsapp.com/send?phone=5491121708911")
 
