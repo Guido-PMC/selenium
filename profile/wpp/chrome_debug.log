@@ -1,0 +1,4 @@
+[88475:259:0504/131542.766655:ERROR:mach_port_rendezvous.cc(310)] bootstrap_look_up com.google.Chrome.MachPortRendezvousServer.1: Permission denied (1100)
+[88476:259:0504/131542.767192:ERROR:mach_port_rendezvous.cc(310)] bootstrap_look_up com.google.Chrome.MachPortRendezvousServer.1: Permission denied (1100)
+[88476:259:0504/131542.770020:ERROR:child_thread_impl.cc(226)] Mach rendezvous failed, terminating process (parent died?)
+[88475:259:0504/131543.288011:ERROR:child_thread_impl.cc(226)] Mach rendezvous failed, terminating process (parent died?)
