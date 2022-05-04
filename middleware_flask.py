@@ -32,7 +32,7 @@ def test():
         #options.add_argument(r'--profile-directory=Profile 8') #e.g. Profile 3
         #options.add_argument(argument_path)
         #options.add_argument(argument2_path)
-        driver = webdriver.Chrome(webdriver_path, chrome_options=options)
+        driver = webdriver.Chrome(webdriver_path, options=options)
         driver.get("https://web.whatsapp.com/send?phone=5491121708911")
         wait = WebDriverWait(driver, 600)
         # Replace 'Friend's Name' with the name of your friend
