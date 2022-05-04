@@ -13,7 +13,7 @@ import pickle
 import os
 import time
 from selenium import webdriver
-sele = os.popen('bash -c /opt/bin/start-selenium-standalone.sh')
+sele = os.popen("bash -c /opt/bin/start-selenium-standalone.sh")
 output = sele.read()
 print(output)
 app = Flask(__name__)
