@@ -32,6 +32,7 @@ webdriver_path = os.environ['WEBDRIVER']
 argument_path = os.environ['ARGUMENT']
 argument2_path = os.environ['ARGUMENT2']
 options = webdriver.ChromeOptions()
+options.add_argument("--disable-dev-shm-usage")
 #options.add_argument("--user-data-dir=/Users/guigonzalez/Library/Application Support/Google/Chrome/") #e.g. C:\Users\You\AppData\Local\Google\Chrome\User Data
 #options.add_argument(r'--profile-directory=Profile 8') #e.g. Profile 3
 #options.add_argument(argument_path)
